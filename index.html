@@ -376,11 +376,11 @@
         background: #fff;
       }
     </style>
-	  <script id="cookieScript" class="inline-script">
-  const expires = new Date();
-  expires.setDate(expires.getDate() + 7);
-
-  document.cookie = `abtastyuid=e12ytuiasnbcua123; expires=${expires.toUTCString()}; path=/`;
+<script>
+	setTimeout(() => {
+  document.cookie = "abtastyuid=QA123ABC456XYZ; path=/; SameSite=Lax";
+  console.log("Cookie abtastyuid created after 1 second");
+}, 2000);
 </script>
 	 
 	 	  <script id="jqueryLib" class="external-script" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
